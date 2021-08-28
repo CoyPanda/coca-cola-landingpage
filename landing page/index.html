@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <section>
+        <img src="Pepsi-Logo.png">
+        <ul>
+            <li>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">News Letter</a>
+            <a href="#">Details</a>
+            <a href="#">Customer service</a>
+            </li>
+        </ul>
+    </section>
+    <div class="text"><h2>Delicious <br> Refreshing Pepsi </h2> <br> 
+        <p>Pepsi is a carbonated drink manufactured by <br> PepsiCo. Originally created and developed in 1893 <br> by Caled Bradham and introduced as Brad's drink, it was <br> renamed as Pepsi-Cola in 1898, and then shorted to Pepsi in 1961.</p> <br>
+        <a href="#">More Details.</a></div> <br>
+    
+        <div class="cans">
+            <img src="can-pepsi-removebg-preview.png" alt="" class="big">
+            <ul class="short">
+                <li><img src="can-pepsi-removebg-preview.png" onclick="imageChanger('can-pepsi-removebg-preview.png'); bgChanger('blue')"> </li>
+                <li><img src="can-pepsi-zero-sugar-removebg-preview.png" onclick="imageChanger('can-pepsi-zero-sugar-removebg-preview.png'); bgChanger('black')"> </li>
+                <li><img src="Diet-Pepsi-v2_12oz-removebg-preview.png" onclick="imageChanger('Diet-Pepsi-v2_12oz-removebg-preview.png'); bgChanger('red')"></li>
+            </ul>
+        </div>
+        <script type="text/JavaScript">
+            function imageChanger(anything){
+                document.querySelector('.big').src = anything;
+            }
+            function bgChanger(color){
+                const sec = document.querySelector('body');
+                sec.style.background = color;    
+            }
+        </script>
+</body>
+</html>
